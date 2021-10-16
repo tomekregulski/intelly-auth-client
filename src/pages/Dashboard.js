@@ -76,7 +76,7 @@ const Dashboard = () => {
           {access.includes('retail-data') && (
             <ButtonMain variant='outlined' fullWidth>
               <a
-                href={`https://happy-saha-7828d3.netlify.app/?${query.email}&${query.password}`}
+                href={`https://happy-saha-7828d3.netlify.app/?${query.token}`}
                 style={{ textDecoration: 'none' }}
               >
                 Retail Data
@@ -96,7 +96,7 @@ const Dashboard = () => {
           {access.includes('reports') && (
             <ButtonMain variant='outlined' fullWidth>
               <a
-                href={`https://quirky-leavitt-055b45.netlify.app/?${query.email}&${query.password}`}
+                href={`https://quirky-leavitt-055b45.netlify.app/?${query.token}`}
                 style={{
                   textDecoration: 'none',
                   '&visited': { color: '#1976d2' },
@@ -109,7 +109,7 @@ const Dashboard = () => {
           {access.includes('events-data') && (
             <ButtonMain variant='outlined' fullWidth>
               <a
-                href={`https://focused-tesla-b57f37.netlify.app/?${query.email}&${query.password}`}
+                href={`https://focused-tesla-b57f37.netlify.app/?${query.token}`}
                 style={{ textDecoration: 'none' }}
               >
                 Field Data
