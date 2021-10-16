@@ -59,14 +59,13 @@ const ProtectedRoute = (props) => {
             roles: response.data.roles,
             access: response.data.access,
             brands: response.data.brands,
+            token: response.data.token
           });
           setIsLoading(false);
         });
     }
   }, [
-    credentials.email,
-    credentials.length,
-    credentials.password,
+    credentials.token,
     credentials,
     setCredentials,
     setIsAuth,
