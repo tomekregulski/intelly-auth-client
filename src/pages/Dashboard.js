@@ -56,8 +56,9 @@ const Dashboard = () => {
   useEffect(() => {
     if (Object.keys(userData).length) {
       setQuery({
-        email: userData.email,
-        password: userData.password,
+        // email: userData.email,
+        // password: userData.password,
+        token: userData.token,
       });
       const services = userData.access.split(',');
       setAccess(services);
@@ -70,7 +71,7 @@ const Dashboard = () => {
         <h1 style={{ textAlign: 'center' }}>Welcome, {userData.first_name}!</h1>
       ) : null}
       <h2 style={{ textAlign: 'center' }}>Choose where to go from here</h2>
-      {Object.keys(query).length && access.length ? (
+      {query.token && access.length ? (
         <Grid style={{ marginTop: '60px' }}>
           {access.includes('retail-data') && (
             <ButtonMain variant='outlined' fullWidth>
@@ -85,7 +86,7 @@ const Dashboard = () => {
           {access.includes('pdf') && (
             <ButtonMain variant='outlined' fullWidth>
               <a
-                href={`https://priceless-mclean-105c0c.netlify.app/?${query.email}&${query.password}`}
+                href={`https://priceless-mclean-105c0c.netlify.app/?${query.token}`}
                 style={{ textDecoration: 'none' }}
               >
                 Invoices

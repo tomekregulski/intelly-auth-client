@@ -17,11 +17,11 @@ const ProtectedRoute = (props) => {
   useEffect(() => {
     if (window.location.href.includes('?')) {
       const query = window.location.href.split('?');
-      console.log(query[1].split('&'));
-      const querySplit = query[1].split('&');
+      // console.log(query[1].split('&'));
+      // const querySplit = query[1].split('&');
       setCredentials({
-        email: querySplit[0],
-        password: querySplit[1],
+        token: query[1],
+        // password: querySplit[1],
       });
     } else {
       setIsLoading(false);
@@ -32,9 +32,9 @@ const ProtectedRoute = (props) => {
     if (Object.keys(credentials).length) {
       console.log('attemping login');
       const payload = {
-        email: credentials.email,
-        password: credentials.password,
+        token: credentials.token,
       };
+
       return axios
         .post(
           'https://intelly-auth-service.herokuapp.com/api/users/login-link',
