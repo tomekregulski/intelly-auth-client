@@ -6,6 +6,8 @@ import NavbarSwitch from './components/Navbar/NavbarSwitch';
 import { Login, Dashboard } from './pages';
 import ProtectedRoute from './ProtectedRoute';
 
+import './index.css';
+
 function App() {
   return (
     <>
