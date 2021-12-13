@@ -76,7 +76,7 @@ const Dashboard = () => {
               </a>
             </ButtonMain>
           )}
-          {access.includes('pdf') && (
+          {access.includes('pdf') && userData.first_name === 'Tomek' && (
             <ButtonMain variant='outlined' fullWidth>
               <a
                 href={`https://priceless-mclean-105c0c.netlify.app/?${query.token}`}
