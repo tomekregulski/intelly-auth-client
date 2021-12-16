@@ -59,11 +59,15 @@ const Dashboard = () => {
   }, [userData]);
 
   return (
-    <div>
+    <div style={{ marginTop: '85px' }}>
       {userData.first_name ? (
-        <h1 style={{ textAlign: 'center' }}>Welcome, {userData.first_name}!</h1>
+        <p style={{ fontWeight: '400', fontSize: '28px', textAlign: 'center' }}>
+          Welcome, {userData.first_name}!
+        </p>
       ) : null}
-      <h2 style={{ textAlign: 'center' }}>Choose where to go from here</h2>
+      <p style={{ fontWeight: '400', fontSize: '18px', textAlign: 'center' }}>
+        Choose where to go from here
+      </p>
       {query.token && access.length ? (
         <Grid style={{ marginTop: '60px' }}>
           {access.includes('retail-data') && (
