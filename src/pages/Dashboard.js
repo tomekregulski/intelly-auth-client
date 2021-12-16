@@ -49,8 +49,6 @@ const Dashboard = () => {
   useEffect(() => {
     if (Object.keys(userData).length) {
       setQuery({
-        // email: userData.email,
-        // password: userData.password,
         token: userData.token,
       });
       const services = userData.access.split(',');

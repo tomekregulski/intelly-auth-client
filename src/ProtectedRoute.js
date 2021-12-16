@@ -72,7 +72,7 @@ const ProtectedRoute = (props) => {
           marginTop: '50px',
         }}
       >
-        <h1>Loading</h1>
+        <h1>Loading...</h1>
       </div>
     );
   }
