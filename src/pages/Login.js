@@ -33,7 +33,6 @@ const Login = () => {
 
       return axios
         .post('https://intelly-auth-service.herokuapp.com/api/users/login', {
-          // .post('http://localhost:5000/api/users/login', {
           payload,
         })
         .then((response) => {
