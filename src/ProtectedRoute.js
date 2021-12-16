@@ -59,21 +59,19 @@ const ProtectedRoute = (props) => {
             roles: response.data.roles,
             access: response.data.access,
             brands: response.data.brands,
-            token: response.data.token
+            token: response.data.token,
           });
           setIsLoading(false);
         });
     }
-  }, [
-    credentials.token,
-    credentials,
-    setCredentials,
-    setIsAuth,
-    setUserData,
-  ]);
+  }, [credentials.token, credentials, setCredentials, setIsAuth, setUserData]);
 
   if (isLoading === true) {
-    return <h1>Loading</h1>;
+    return (
+      <div style={{ textAlign: 'center', marginTop: '50px' }}>
+        <h1>Loading</h1>
+      </div>
+    );
   }
 
   if ((isLoading === false && isAuth) === true) {

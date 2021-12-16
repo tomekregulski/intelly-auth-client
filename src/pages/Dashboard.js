@@ -70,7 +70,10 @@ const Dashboard = () => {
             <ButtonMain variant='outlined' fullWidth>
               <a
                 href={`https://happy-saha-7828d3.netlify.app/?${query.token}`}
-                style={{ textDecoration: 'none' }}
+                style={{
+                  textDecoration: 'none',
+                  color: 'rgba(0, 180, 249, 0.872)',
+                }}
               >
                 Retail Data
               </a>
@@ -80,9 +83,12 @@ const Dashboard = () => {
             <ButtonMain variant='outlined' fullWidth>
               <a
                 href={`https://priceless-mclean-105c0c.netlify.app/?${query.token}`}
-                style={{ textDecoration: 'none' }}
+                style={{
+                  textDecoration: 'none',
+                  color: 'rgba(0, 180, 249, 0.872)',
+                }}
               >
-                Invoices
+                Database Uploads
               </a>
             </ButtonMain>
           )}
@@ -92,7 +98,7 @@ const Dashboard = () => {
                 href={`https://quirky-leavitt-055b45.netlify.app/?${query.token}`}
                 style={{
                   textDecoration: 'none',
-                  '&visited': { color: '#1976d2' },
+                  color: 'rgba(0, 180, 249, 0.872)',
                 }}
               >
                 Field Visit
@@ -103,7 +109,10 @@ const Dashboard = () => {
             <ButtonMain variant='outlined' fullWidth>
               <a
                 href={`https://focused-tesla-b57f37.netlify.app/?${query.token}`}
-                style={{ textDecoration: 'none' }}
+                style={{
+                  textDecoration: 'none',
+                  color: 'rgba(0, 180, 249, 0.872)',
+                }}
               >
                 Field Data
               </a>
